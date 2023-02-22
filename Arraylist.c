@@ -26,21 +26,21 @@ int removebyindex(int *arr, int len, int index)
 }
 int main(int argc, char *argv)
 {
-    // int *arr = (int *)malloc(sizeof(int) * 20);
-    // for (int i = 0; i < 10; i++)
-    // {
-    //     scanf("%d", &arr[i]);
-    // }
-    // int newlen = insert(arr, 10, 3, 100);
-    // newlen = removebyindex(arr, newlen, 3);
-    // for (int i = 0; i < newlen; i++)
-    // {
-    //     printf("%d ", arr[i]);
-    // }
-    struct node *head = (struct node *)malloc(sizeof(struct node));
+    int *arr = (int *)malloc(sizeof(int) * 20);
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    int newlen = insert(arr, 10, 3, 100);
+    newlen = removebyindex(arr, newlen, 3);
+    for (int i = 0; i < newlen; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    node *head = (node *)malloc(sizeof(node));
     head->data = 100;
     head->next = NULL;
-    struct node *p = (struct node *)malloc(sizeof(struct node));
+    node *p = (node *)malloc(sizeof(node));
     p->data = 200;
     p->next = NULL;
     head->next = p;
